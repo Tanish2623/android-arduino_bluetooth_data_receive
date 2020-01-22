@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout tools:context=".MainActivity"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/compartment_indicator"
+        android:contentDescription="Compartiment Indicator"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:id="@+id/imageView1"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/close"
+        android:id="@+id/textView1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Data Receiver"/>
+
+    <TextView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/imageView1"
+        android:id="@+id/label"
+        android:text="Temparature, Humidity, Freshness data"
+        android:textSize="12sp"
+        android:maxLines="10"
+        android:layout_alignParentLeft="true"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/open"
+        android:text="Open Bluetooth"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/close"
+        android:text="Close Bluetooth"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/open"
+        android:layout_alignBaseline="@+id/open"/>
+
+</RelativeLayout>
